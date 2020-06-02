@@ -8,7 +8,7 @@ import paper from "./../../Assets/paper.png";
 
 export default function HomePage() {
   return (
-    <>
+    <div>
       <Image src={banner} alt="meal" />
       <Home>
         <Icon src={mealplan} alt="mealplan" />
@@ -33,7 +33,7 @@ export default function HomePage() {
         <h2>Shopping Lists</h2>
         <p>Generate weekly shopping lists for your meal plans</p>
       </Home>
-    </>
+    </div>
   );
 }
 
@@ -57,7 +57,7 @@ const Home = styled.section`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  h2 {
+  & h2 {
     padding-bottom: 2rem;
   }
 `;
