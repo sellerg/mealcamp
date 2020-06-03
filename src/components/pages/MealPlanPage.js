@@ -170,8 +170,8 @@ export default function MealPlanPage(props) {
 const Maindiv = styled.div`
   padding-top: 6rem;
   width: 100vw;
-  height: 100vh;
-  min-height: 170vh;
+  height: 100%;
+  /* min-height: 170vh; */
   & > h1 {
     font-size: 3rem;
     padding: 2rem;
