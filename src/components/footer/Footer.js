@@ -23,7 +23,7 @@ export default function Footer() {
           <Img src={linkedinIcon} alt="github" />
         </a>
         <a
-          href="https://github.com/sellerg/todo-list"
+          href="https://github.com/sellerg/mealcamp"
           rel="noopener noreferrer"
           target="_blank"
         >
