@@ -103,7 +103,7 @@ export default function RecipePage() {
 const Maindiv = styled.div`
   padding-top: 6rem;
   background-color: white;
-  height: 100vh;
+  height: 100%;
   width: 100vw;
 
   & > h1 {
