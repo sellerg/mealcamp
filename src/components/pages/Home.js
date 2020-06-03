@@ -1,10 +1,10 @@
 import React from "react";
-import styled from "styled-components";
 import banner from "./../../Assets/4.jpg";
 import mealplan from "./../../Assets/mealplan.png";
 import recipe from "./../../Assets/recipe.png";
 import food from "./../../Assets/food.png";
 import paper from "./../../Assets/paper.png";
+import { Image, Home, Icon } from "./HomeStyle";
 
 export default function HomePage() {
   return (
@@ -36,35 +36,3 @@ export default function HomePage() {
     </div>
   );
 }
-
-const Image = styled.img`
-  object-fit: cover;
-  height: 90vh;
-  width: 100vw;
-  margin: 0px;
-  padding: 0px;
-  display: block;
-  filter: drop-shadow(0px 5px 4px #2d3436);
-`;
-
-const Home = styled.section`
-  width: 100vw;
-  height: 90rem;
-  background-color: lightgrey;
-  margin: 0px;
-  font-size: 2rem;
-  padding: 50px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  & h2 {
-    padding-bottom: 2rem;
-  }
-`;
-
-const Icon = styled.img`
-  height: 10rem;
-  width: 10rem;
-  display: block;
-  padding: 2rem;
-`;
