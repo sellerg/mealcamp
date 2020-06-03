@@ -6,9 +6,9 @@ import HomePage from "./components/pages/Home";
 import AboutPage from "./components/pages/About";
 import RecipePage from "./components/pages/Recipes";
 import SurveyButtonPage from "./components/pages/SurveyButtonPage";
-import LoginPage from "./components/pages/Login";
 import SurveyPage from "./components/pages/SurveyPage";
 import Footer from "./components/footer/Footer";
+import styled from "styled-components";
 
 function App() {
   const [navbarOpen, setNavbar] = useState(false);
@@ -18,9 +18,9 @@ function App() {
   };
 
   return (
-    <div style={{ position: "relative", paddingBottom: "6rem" }}>
+    <Div>
+      <GlobalStyles />
       <Router>
-        <GlobalStyles />
         <Navbar navbarState={navbarOpen} handleNavbar={handleNavbar} />
 
         <Route path="/" exact component={HomePage} />
@@ -28,11 +28,16 @@ function App() {
         <Route path="/recipes" component={RecipePage} />
         <Route path="/mealplans" exact component={SurveyButtonPage} />
         <Route path="/mealplans/survey" component={SurveyPage} />
-        <Route path="/login" component={LoginPage} />
+
         <Footer />
       </Router>
-    </div>
+    </Div>
   );
 }
+
+const Div = styled.div`
+  position: relative;
+  padding-bottom: 6rem;
+`;
 
 export default App;
