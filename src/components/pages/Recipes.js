@@ -38,7 +38,7 @@ export default function RecipePage() {
     console.log(loading);
     try {
       let response = await fetch(
-        `${url}${apiConnect}${API_KEY}&tags=${query}${number}${protien}`
+        `${url}${apiConnect}${API_KEY}&tags=${query.toLowerCase()}${number}${protien}`
       );
       let data = await response.json().then(isLoading(false));
       setRecipe(data.recipes);
@@ -103,6 +103,7 @@ export default function RecipePage() {
 const Maindiv = styled.div`
   padding-top: 6rem;
   background-color: white;
+  min-height: 100vh;
   height: 100%;
   width: 100vw;
 
