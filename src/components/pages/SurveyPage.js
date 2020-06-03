@@ -251,7 +251,7 @@ const Wrapper = styled.form`
 `;
 
 const Heading = styled.div`
-  width: 50vw;
+  width: 80vw;
   height: 5rem;
   background-color: #fdcb6e;
   padding-top: 1.5rem;
@@ -260,8 +260,8 @@ const Heading = styled.div`
 `;
 
 const Body = styled.div`
-  width: 50vw;
-  height: 800px;
+  width: 80vw;
+  height: 100%;
   background-color: rgb(240, 240, 240);
 `;
 
@@ -271,6 +271,7 @@ const Question = styled.div`
   padding: 2rem;
   font-size: 2rem;
   padding-bottom: 5rem;
+  word-wrap: break-word;
   & p {
     padding-left: 1rem;
     padding-right: 1rem;

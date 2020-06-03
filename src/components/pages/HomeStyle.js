@@ -12,7 +12,7 @@ export const Image = styled.img`
 
 export const Home = styled.section`
   width: 100vw;
-  height: 90rem;
+  height: 100%;
   background-color: lightgrey;
   margin: 0px;
   font-size: 2rem;
